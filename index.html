@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zanoni</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/scripts.js" defer type="module"></script>
+</head>
+<body class="fondo">
+    <img src="./imagenes/utn.jpg"  alt="" class="imagen">
+    <div class="contenedor" id="divForm" hidden>
+        
+        <label for="txtNombre">Materia</label><br>
+        <input type="text" name="" id="txtNombre"><br>
+        <label for="txtCuatri">Cuatrimestre</label><br>
+        
+        <select name="cuatri" id="txtCuatri" class="select">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        </select><br><br>
+        <label for="txtFecha">Fecha Final</label><br>
+        <input type="date" name="" id="txtFecha"><br>
+        <label class="lbl">Turno:
+        <label for="rdoM"><input type="radio" name="trans" id="rdoMan" value="mañana" checked>Mañana</label>  
+        <label id=lblTrans for="rdoF"><input type="radio" name="trans" id="rdoNoche" value="noche">Noche</label>
+    </label>
+        <br>
+
+        <input type="button"  value="Guardar" class="btn" id="btnGuardar">
+        <input type="button" value="Eliminar" class="btnE" id="btnEliminar" hidden>
+        <input type="button" value="Modificar" class="btnM" id="btnModificar" hidden>
+        <div class="loader" id="spinner" hidden></div>
+      
+    </div>
+    
+    
+    <div id="divTabla">
+        
+    </div>
+</div>
+</body>
+</html>
